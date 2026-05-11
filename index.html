@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechStore Agency</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Chart.js (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════
+       NAV
+  ══════════════════════════════════ -->
+  <nav>
+    <a href="#" class="nav-logo">Tech<span>Store</span></a>
+    <ul class="nav-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#testimonios">Clientes</a></li>
+      <li><a href="#contacto" class="nav-cta">Hablemos</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════════
+       HERO
+  ══════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">Agencia de Producto Digital</div>
+      <h1 class="hero-title">
+        Construimos<br>
+        <span class="line2">el software que</span><br>
+        <span class="accent">escala tu negocio</span>
+      </h1>
+      <p class="hero-sub">
+        Diseño, ingeniería y estrategia tech bajo un mismo techo.
+        Transformamos ideas complejas en productos que los usuarios aman.
+      </p>
+      <div class="hero-actions">
+        <a href="#dashboard" class="btn-primary">Ver nuestro trabajo</a>
+        <a href="#servicios"  class="btn-ghost">Explorar servicios</a>
+      </div>
+    </div>
+
+    <!-- Cards flotantes — ocultas en mobile -->
+    <div class="hero-stats">
+      <div class="hero-stat-card">
+        <div class="val">148</div>
+        <div class="lbl">Proyectos entregados</div>
+        <div class="trend">↑ 23% este año</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="val">37</div>
+        <div class="lbl">Clientes activos</div>
+        <div class="trend">↑ 8 nuevos en Q1</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="val">98.5%</div>
+        <div class="lbl">Satisfacción</div>
+        <div class="trend">→ Estable</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       SERVICIOS
+  ══════════════════════════════════ -->
+  <section id="servicios">
+    <div class="section-header fade-in">
+      <div class="section-tag">Lo que hacemos</div>
+      <h2 class="section-title">Servicios diseñados<br>para crecer</h2>
+      <p class="section-sub">
+        Desde el MVP hasta el escalado, te acompañamos en cada etapa
+        con el stack que tu producto necesita.
+      </p>
+    </div>
+
+    <div class="services-grid fade-in">
+      <div class="service-card">
+        <div class="service-icon purple">🧠</div>
+        <div class="service-title">Producto & Estrategia</div>
+        <p class="service-desc">
+          Definimos el roadmap, priorizamos features y alineamos
+          la tecnología con los objetivos de negocio.
+        </p>
+        <div class="service-tags">
+          <span class="tag">Product Design</span>
+          <span class="tag">UX Research</span>
+          <span class="tag">Roadmap</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon pink">⚡</div>
+        <div class="service-title">Desarrollo Web & Mobile</div>
+        <p class="service-desc">
+          Aplicaciones robustas, rápidas y escalables con las
+          tecnologías más demandadas del mercado.
+        </p>
+        <div class="service-tags">
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Python</span>
+          <span class="tag">Flutter</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon teal">☁️</div>
+        <div class="service-title">Cloud & Infraestructura</div>
+        <p class="service-desc">
+          Arquitecturas cloud-native, CI/CD, contenedores y observabilidad
+          para que tu app nunca duerma.
+        </p>
+        <div class="service-tags">
+          <span class="tag">AWS</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Kubernetes</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon amber">🤖</div>
+        <div class="service-title">IA & Automatización</div>
+        <p class="service-desc">
+          Integramos modelos de lenguaje, visión por computadora y
+          pipelines de datos para automatizar lo repetible.
+        </p>
+        <div class="service-tags">
+          <span class="tag">LLMs</span>
+          <span class="tag">APIs IA</span>
+          <span class="tag">Pipelines</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       DASHBOARD
+  ══════════════════════════════════ -->
+  <section id="dashboard">
+    <div class="section-header fade-in">
+      <div class="live-badge">
+        <span class="live-dot"></span>
+        En vivo
+      </div>
+      <h2 class="section-title">Métricas en tiempo real</h2>
+      <p class="section-sub">
+        Datos actualizados cada 5 segundos desde nuestra API.
+      </p>
+    </div>
+
+    <!-- KPIs -->
+    <div class="kpi-grid fade-in">
+      <div class="kpi-card purple">
+        <div class="kpi-label">Proyectos completados</div>
+        <div class="kpi-value" id="kpi-projects">148</div>
+        <div class="kpi-sub">Desde enero 2022</div>
+        <div class="kpi-change up">↑ +23% vs año anterior</div>
+      </div>
+      <div class="kpi-card red">
+        <div class="kpi-label">Clientes activos</div>
+        <div class="kpi-value" id="kpi-clients">37</div>
+        <div class="kpi-sub">En 14 países</div>
+        <div class="kpi-change up">↑ +8 en Q1 2026</div>
+      </div>
+      <div class="kpi-card teal">
+        <div class="kpi-label">Horas de desarrollo</div>
+        <div class="kpi-value" id="kpi-hours">12.4k</div>
+        <div class="kpi-sub">Este año</div>
+        <div class="kpi-change up">↑ Ritmo: 1.2k/mes</div>
+      </div>
+      <div class="kpi-card amber">
+        <div class="kpi-label">Satisfacción del cliente</div>
+        <div class="kpi-value" id="kpi-sat">98.5%</div>
+        <div class="kpi-sub">NPS promedio</div>
+        <div class="kpi-change neutral">→ Estable en máximos</div>
+      </div>
+    </div>
+
+    <!-- Gráficos -->
+    <div class="charts-row fade-in">
+      <div class="chart-card">
+        <div class="chart-title">Proyectos entregados por mes — 2025/2026</div>
+        <div class="chart-legend">
+          <span><span class="dot dot-purple"></span>Proyectos</span>
+          <span><span class="dot dot-purple-soft"></span>Objetivo</span>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="projectsChart"></canvas>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <div class="chart-title">Tecnologías más usadas</div>
+        <div class="chart-legend">
+          <span><span class="dot dot-purple"></span>React 28%</span>
+          <span><span class="dot dot-red"></span>Python 22%</span>
+          <span><span class="dot dot-teal"></span>Node 18%</span>
+          <span><span class="dot dot-amber"></span>Flutter 16%</span>
+          <span><span class="dot dot-gray"></span>Otros 16%</span>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="techChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="timestamp">
+      <span>🕐</span>
+      <span id="timestamp">Última actualización: cargando...</span>
+      <span class="mock-badge">● DATOS MOCKEADOS — pendiente conexión Flask</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       TESTIMONIOS
+  ══════════════════════════════════ -->
+  <section id="testimonios">
+    <div class="section-header fade-in">
+      <div class="section-tag">Lo que dicen</div>
+      <h2 class="section-title">Clientes que<br>confían en nosotros</h2>
+    </div>
+
+    <div class="testimonios-grid">
+      <div class="testi-card fade-in">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">
+          "TechStore no solo entregó el producto en tiempo, sino que propuso
+          mejoras que no habíamos contemplado. El dashboard de analíticas
+          cambió cómo tomamos decisiones."
+        </p>
+        <div class="testi-author">
+          <div class="testi-avatar avatar-a">MR</div>
+          <div>
+            <div class="testi-name">Martina Ríos</div>
+            <div class="testi-role">CTO — FinCore</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card fade-in">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">
+          "Migrar a cloud era algo que postergábamos por miedo. Con TechStore
+          lo hicimos en 6 semanas sin downtime. El equipo es de otro nivel."
+        </p>
+        <div class="testi-author">
+          <div class="testi-avatar avatar-b">JC</div>
+          <div>
+            <div class="testi-name">Jorge Cuello</div>
+            <div class="testi-role">Founder — Logística360</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card fade-in">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">
+          "Necesitábamos un MVP en 8 semanas para presentar a inversores.
+          Lo tuvimos en 7, funcional y con diseño impecable.
+          Conseguimos la ronda."
+        </p>
+        <div class="testi-author">
+          <div class="testi-avatar avatar-c">AS</div>
+          <div>
+            <div class="testi-name">Andrea Salinas</div>
+            <div class="testi-role">CEO — MedTrack</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       FOOTER
+  ══════════════════════════════════ -->
+  <footer id="contacto">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">Tech<span>Store</span></a>
+        <p>
+          Agencia de producto digital. Diseño, ingeniería y estrategia
+          para startups y empresas que quieren crecer sin límites.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#">Producto & UX</a></li>
+          <li><a href="#">Desarrollo Web</a></li>
+          <li><a href="#">Apps Mobile</a></li>
+          <li><a href="#">Cloud & DevOps</a></li>
+          <li><a href="#">IA & Datos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Casos de éxito</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="#">hola@techstore.dev</a></li>
+          <li><a href="#">+54 9 11 0000-0000</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 TechStore Agency. Todos los derechos reservados.</p>
+      <div class="footer-socials">
+        <a href="#">Li</a>
+        <a href="#">Gh</a>
+        <a href="#">Tw</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS propio — siempre al final del body -->
+  <script src="/dashboard.js"></script>
+
+</body>
+</html>
