@@ -263,3 +263,19 @@ fetchMockStats();
 
 // Luego cada 5 segundos
 setInterval(fetchMockStats, 5000);
+
+const navToggle = document.getElementById('navToggle')
+const navLinks = document.getElementById('navLinks')
+
+navToggle.addEventListener('click', () => {
+  navToggle.classList.toggle('active')
+  navLinks.classList.toggle('open')
+})
+
+// Cerrar el menú al clickear un link
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navToggle.classList.remove('active')
+    navLinks.classList.remove('open')
+  })
+})
